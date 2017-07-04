@@ -1,0 +1,34 @@
+WIN_X: 1000;
+WIN_Y: 800;
+reflection_depth: 2;
+refraction_depth: 3;
+glares_present:   1;
+shades_present:	1;
+
+CAMERA:
+	origin (0, 0, -2000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0);
+
+SPHERE:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+ 	refr_coeff   1.4
+	color (147, 141, 233)
+ 	refl_light 	0
+	transparency 0
+	reflection 0
+	ambient 1
+	radius 400
+	dir_x (23, 23, 0)
+	dir_y (-23, 23, 0)
+	angle_x	10;
+
+LIGHT_POINT:
+	origin (0, 0, -1000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	1
+	decrement    0.0001;

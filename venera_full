@@ -1,0 +1,80 @@
+WIN_X: 1000;
+WIN_Y: 800;
+reflection_depth: 2;
+refraction_depth: 3;
+glares_present:   1;
+shades_present:	1;
+threads_quantity: 1;
+anti_aliasing:	1;
+
+CAMERA:
+	origin (0, 0, -9000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0);
+
+OBJ:
+	color (255, 0, 255)
+	move (0, 100, 0)
+	rotation (0, 160, 180)
+	refr_coeff 1.00
+	transparency 0
+	ambient 1
+	zoom 0.25
+	poligons 3000
+	obj additional/objfiles/venusv.obj;
+
+PLAIN:
+	origin (0, 0, 1200)
+	refr_coeff 1.034
+	refl_light 0
+	reflection 100
+	ambient		1
+	normal (0, 0, 1);
+
+PLAIN:
+	origin (0, 0, -10000)
+	refr_coeff 1.034
+	refl_light 0
+	reflection 100
+	ambient		1
+	normal (0, 0, 1);
+
+PLAIN:
+	origin (0, 1200, 0)
+	refr_coeff 1.034
+	refl_light 0
+	reflection 100
+	ambient		1
+	normal (0, 1, 0);
+
+PLAIN:
+	origin (0, -1200, 0)
+	refr_coeff 1.034
+	refl_light 0
+	reflection 100
+	ambient		1
+	normal (0, 1, 0);
+
+PLAIN:
+	origin (1200, 0, 0)
+	refr_coeff 1.034
+	refl_light 0
+	reflection 100
+	ambient		1
+	normal (1, 0, 0);
+
+PLAIN:
+	origin (-1200, 0, 0)
+	refr_coeff 1.034
+	refl_light 0
+	reflection 100
+	ambient		1
+	normal (1, 0, 0);
+
+LIGHT_POINT:
+	origin (300, -200, -1000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	1
+	decrement    0.0001;

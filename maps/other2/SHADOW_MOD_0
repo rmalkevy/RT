@@ -1,0 +1,69 @@
+WIN_X: 130;
+WIN_Y: 500;
+reflection_depth: 4;
+refraction_depth: 3;
+glares_present:   1;
+shades_present:	1;
+threads_quantity: 1;
+anti_aliasing:	1;
+
+CAMERA:
+	origin (0, 0, -2000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0);
+
+SPHERE:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+ 	refr_coeff   1.4
+	color (0, 255, 0)
+ 	refl_light 	0
+	transparency 0
+	reflection 1
+	ambient 1
+	radius 100
+	dir_x (23, 23, 0)
+	dir_y (-23, 23, 0)
+	angle_x	10;
+
+PLAIN:
+	origin (300, 1, 1000)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (0, 255, 0)
+	refr_coeff 1.034
+	refl_light 	0
+	transparency 0
+	reflection 1
+	ambient 1
+	normal (1, 0, 0)
+	texture aaa
+	delta_x 10
+	delta_y 26;
+
+PLAIN:
+	origin (1, 1, 1)
+	move (0, 0, 0)
+	rotation (-5, 0, 0)
+	color (0, 255, 255)
+	refr_coeff 1.034
+	refl_light 	0
+	transparency 0
+	reflection 0
+	ambient 1
+	normal (0, 1, 0)
+	texture aaa
+	delta_x 10
+	delta_y 26;
+
+
+
+
+LIGHT_POINT:
+	origin (0, 0, 0)
+	move  (50, -1000, 1500)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	10
+	decrement    0.0000001;

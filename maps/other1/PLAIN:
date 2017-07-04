@@ -1,0 +1,59 @@
+PLAIN:
+	origin (0, -50, 1039)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 0)
+	refr_coeff 1.034
+	refl_light 	0
+	transparency 0
+	reflection 0
+	ambient		1
+	normal (0, 0, -1)
+	texture aaa
+	delta_x 10
+	delta_y 26;
+
+CYLINDER:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (0, 0, 255)
+	refr_coeff 1.034
+	refl_light 	0
+	transparency 0
+	reflection 0
+	ambient 1
+	direction  (0, 1, 0)
+	radius 63
+	dir_x (23, 23, 0)
+	angle_x 10;
+
+LIGHT_DIR:
+origin (-530, 0, -14)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	1
+	angle 10
+	direction (0.55, 0, 1)
+	decrement    0.00001;
+
+LIGHT_DIR:
+origin (100, 0, -13)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	1
+	angle 10
+	direction (0, 0, 1)
+	decrement    0.00001;
+
+LIGHT_POINT:
+origin (-300, 0, -600)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 0, 255)
+	intensity 	1
+	angle 6
+	direction (0, 0, 1)
+	decrement    0.00001;

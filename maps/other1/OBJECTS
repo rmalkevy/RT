@@ -1,0 +1,62 @@
+SPHERE:
+	origin (0, 0, 0)
+	move (0, 0, -50)
+	rotation (0, 0, 0)
+	refr_coeff   1.4
+	color (0, 255, 0)
+	refr_coeff 1.034
+	refl_light 	1
+	transparency 1
+	reflection 1
+	ambient 1
+	radius 63
+	dir_x (23, 23, 0)
+	dir_y (-23, 23, 0)
+	angle_x	10
+	has_texture 1
+	angle_y 27;
+
+	CONE:
+	origin (0, 255, 0)
+	move (0, 0, 123.45)
+	rotation (25, 0, 25)
+	color (255, 0, 255)
+	refr_coeff 1.034
+	refl_light 	1
+	transparency 1
+	reflection 1
+	ambient 1
+	direction  (0, 10, 10)
+	angle 36
+	has_texture 1;
+
+	CYLINDER:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, -45)
+	color (0, 0, 255)
+	refr_coeff 1.034
+	refl_light 	1
+	transparency 1
+	reflection 1
+	ambient 1
+	direction  (0, 10, 10)
+	radius 63
+	dir_x (23, 23, 0)
+	angle_x 10
+	has_texture 1;
+
+	PLAIN:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 0)
+	refr_coeff 1.034
+	refl_light 	1
+	transparency	1
+	reflection 1
+	ambient		1
+	normal (0, -1, 1)
+	texture aaa
+	delta_x		10
+	delta_y 26;

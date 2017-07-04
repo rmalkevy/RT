@@ -1,0 +1,32 @@
+WIN_X: 1000;
+WIN_Y: 800;
+reflection_depth: 2;
+refraction_depth: 3;
+glares_present:   1;
+shades_present:	1;
+
+CAMERA:
+	origin (0, 0, -2000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0);
+
+CONE:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 73, 73)
+	refr_coeff 1.034
+	refl_light 	0
+	transparency 0
+	reflection 0
+	ambient 1
+	direction  (0, 1, 0)
+	angle 25;
+
+LIGHT_POINT:
+	origin (0, 0, -1000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	1
+	decrement    0.0001;

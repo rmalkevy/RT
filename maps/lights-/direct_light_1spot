@@ -1,0 +1,60 @@
+WIN_X: 1000;
+WIN_Y: 800;
+reflection_depth: 2;
+refraction_depth: 3;
+glares_present:   1;
+shades_present:	1;
+
+CAMERA:
+	origin (0, -2000, -5000)
+	move  (0, 0, 0)
+	rotation (20, 0, 0);
+
+CYLINDER:
+	origin (0, 0, 0)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (81, 255, 191)
+	refr_coeff 1.034
+	refl_light 	0
+	transparency 0
+	reflection 0
+	ambient 1
+	direction  (0, 1, 0)
+	radius 190
+	dir_x (23, 23, 0)
+	angle_x 10;
+
+PLAIN:
+	origin (0, 0, 500)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (205, 205, 205)
+	refr_coeff 1.034
+	refl_light 0
+	transparency 0
+	reflection 0
+	ambient		1
+	normal (0, 0, 1);
+
+PLAIN:
+	origin (0, 1200, 00)
+	move (0, 0, 0)
+	rotation (0, 0, 0)
+	color (205, 205, 205)
+	refr_coeff 1.034
+	refl_light 0
+	transparency 0
+	reflection 0
+	ambient		1
+	normal (0, 1, 0);
+
+LIGHT_DIR:
+	origin (0, 500, -1000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (255, 255, 255)
+	intensity 	1
+	angle 60
+	direction (0, 0, 1)
+	decrement    0.00001;

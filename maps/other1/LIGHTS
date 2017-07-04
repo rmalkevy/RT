@@ -1,0 +1,36 @@
+
+LIGHT_PAR:
+	color (0, 255, 255)
+	intensity 	1.097
+	decrement    0.0001
+	direction (100, 100, 0);
+	
+
+
+LIGHT_PAR:
+;
+
+LIGHT_POINT:
+;
+
+LIGHT_POINT:
+	origin (0, 0, 1000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (0, 255, 255)
+	intensity 	1
+	decrement    0.00001;
+
+LIGHT_DIR:
+
+;
+
+LIGHT_DIR:
+origin (0, 0, 1000)
+	move  (0, 0, 0)
+	rotation (0, 0, 0)
+	color (0, 255, 255)
+	intensity 	1
+	angle 36
+	direction (100, 100, 0)
+	decrement    0.00001;
